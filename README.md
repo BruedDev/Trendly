@@ -121,4 +121,3 @@ git submodule update --init --recursive
 - **Frontend Repository**: https://github.com/BruedDev/Trendly-frontend.git
 
 ## 📞 Hỗ trợ
-Nếu gặp vấn đề, vui lòng tạo issue trên GitHub repository hoặc liên hệ team phát triển.
