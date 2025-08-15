@@ -6,27 +6,39 @@ Dự án Trendly bao gồm cả backend và frontend được quản lý thông 
 - Git phiên bản 2.13 trở lên
 - Node.js và npm (cho frontend và backend)
 
-## 🚀 Hướng dẫn clone project
+## 🚀 Hướng dẫn clone project (1 cách chuẩn)
 
-### Cách 1: Clone với submodules (Khuyến nghị)
+Lưu ý: cách chính thức và gọn nhất là dùng tùy chọn `--recurse-submodules` khi clone — điều này tự động khởi tạo và cập nhật tất cả submodules.
+
+1. Clone repository cùng submodules:
+
 ```bash
 git clone --recurse-submodules https://github.com/BruedDev/Trendly.git
+```
+
+2. Vào thư mục dự án:
+
+```bash
 cd Trendly
 ```
 
-### Cách 2: Clone rồi init submodules sau
+3. Kiểm tra trạng thái submodules (tùy chọn):
+
 ```bash
-git clone https://github.com/BruedDev/Trendly.git
-cd Trendly
-git submodule init
-git submodule update
+git submodule status
 ```
 
-### Cách 3: Sử dụng lệnh rút gọn
+4. (Tùy chọn) Nếu cần đảm bảo submodules dùng nhánh/commit mới nhất từ remote:
+
 ```bash
-git clone https://github.com/BruedDev/Trendly.git
-cd Trendly
-git submodule update --init --recursive
+git submodule update --remote --init --recursive
+```
+
+5. Cập nhật về sau (repo chính + submodules):
+
+```bash
+git pull origin main
+git submodule update --remote --recursive
 ```
 
 ## 📁 Cấu trúc project sau khi clone
