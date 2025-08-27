@@ -79,12 +79,12 @@ git submodule status
 ```bash
 # Làm việc với backend
 cd back-end
-git checkout main
+git checkout backend (nhánh chính làm việc)
 # Thực hiện các thay đổi...
 
 # Làm việc với frontend
 cd ../front-end
-git checkout main
+git checkout frontend (nhánh chính làm việc)
 # Thực hiện các thay đổi...
 ```
 
